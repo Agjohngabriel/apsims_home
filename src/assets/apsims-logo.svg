@@ -7,5 +7,5 @@
     <circle cx="18" cy="4" r="4" fill="#F5A623"></circle>
     <path d="M16 4l1.5 1.5L20 2" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
   </g>
-  <text x="54" y="28" font-family="Syne, sans-serif" font-size="22" font-weight="800" fill="#1A5C3A" letter-spacing="-0.3" dominant-baseline="central" alignment-baseline="central">AP<tspan fill="#C47B1A" dy="0">SI</tspan><tspan dy="0">MS</tspan></text>
+  <text x="54" y="36" font-family="Syne, sans-serif" font-size="22" font-weight="800" fill="#1A5C3A" letter-spacing="-0.3">AP<tspan fill="#C47B1A">SI</tspan>MS</text>
 </svg>
