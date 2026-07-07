@@ -259,6 +259,7 @@
   color: var(--ap-green);
 }
 .brand .dot { color: var(--ap-amber); }
+.brand-logo { height: 36px; width: auto; display: block; }
 .brand-mark {
   width: 30px; height: 30px;
   border-radius: 8px;

@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import './ComingSoon.css';
+import apsimsLogo from '../assets/apsims-logo.svg';
 
 export default function ComingSoon() {
   return (
     <div className="cs-page">
       <nav className="cs-nav">
         <Link to="/" className="brand">
-          <span className="brand-mark"><span className="sun" /></span>
-          AP<span className="dot">SI</span>MS
+          <img src={apsimsLogo} alt="APSIMS" className="brand-logo" />
         </Link>
       </nav>
 

@@ -49,10 +49,10 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <div>© 2026 APSIMS Technologies Ltd. All rights reserved.</div>
+          <div>© 2026 Nacoderiel Limited. All rights reserved.</div>
           <div className="made-in">
             <span className="ng-flag" />
-            Made in Lagos for Nigeria's markets.
+            Made for Nigeria's markets.
           </div>
         </div>
       </div>

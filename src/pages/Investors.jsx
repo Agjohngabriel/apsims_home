@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Investors.css';
+import apsimsLogo from '../assets/apsims-logo.svg';
 
 const STATS = [
   { big: '40M+',  label: 'Nigerian SMEs, 80% still manage inventory on paper' },
@@ -37,8 +38,7 @@ export default function Investors() {
       <nav className="inv-nav">
         <div className="inv-nav-inner">
           <Link to="/" className="brand">
-            <span className="brand-mark"><span className="sun" /></span>
-            AP<span className="dot">SI</span>MS
+            <img src={apsimsLogo} alt="APSIMS" className="brand-logo" />
           </Link>
           <a href="mailto:founders@nacoderiel.com" className="inv-nav-cta">
             Talk to us <i className="ti ti-arrow-right" />
@@ -118,7 +118,7 @@ export default function Investors() {
           <Link to="/" className="inv-back">
             <i className="ti ti-arrow-left" /> Back to APSIMS
           </Link>
-          <span>© 2026 APSIMS Technologies Ltd.</span>
+          <span>© 2026 Nacoderiel Limited.</span>
         </div>
       </footer>
     </div>

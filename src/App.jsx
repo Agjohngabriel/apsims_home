@@ -25,10 +25,15 @@ const TWEAK_DEFAULTS = {
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
+  const [showTop, setShowTop] = useState(false);
   const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
 
   useEffect(() => {
-    function onScroll() { setScrolled(window.scrollY > 8); }
+    function onScroll() {
+      const y = window.scrollY;
+      setScrolled(y > 8);
+      setShowTop(y > 400);
+    }
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -49,6 +54,14 @@ export default function App() {
       <FaqSection />
       <FinalCta />
       <Footer />
+
+      <button
+        className={`back-to-top ${showTop ? 'visible' : ''}`}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        aria-label="Back to top"
+      >
+        <i className="ti ti-arrow-up" />
+      </button>
     </>
   );
 }

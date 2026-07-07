@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Contact.css';
+import apsimsLogo from '../assets/apsims-logo.svg';
 
 const TOPICS = [
   { value: 'general',   label: 'General enquiry' },
@@ -28,8 +29,7 @@ export default function Contact() {
       <nav className="ct-nav">
         <div className="ct-nav-inner">
           <Link to="/" className="brand">
-            <span className="brand-mark"><span className="sun" /></span>
-            AP<span className="dot">SI</span>MS
+            <img src={apsimsLogo} alt="APSIMS" className="brand-logo" />
           </Link>
         </div>
       </nav>
@@ -143,7 +143,7 @@ export default function Contact() {
           <Link to="/" className="ct-back">
             <i className="ti ti-arrow-left" /> Back to home
           </Link>
-          <span>© 2026 APSIMS Technologies Ltd.</span>
+          <span>© 2026 Nacoderiel Limited.</span>
         </div>
       </footer>
     </div>
