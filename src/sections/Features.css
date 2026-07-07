@@ -1,0 +1,83 @@
+.feat-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.feat {
+  background: #fff;
+  border: 1px solid var(--ap-card-border);
+  border-radius: var(--radius-lg);
+  padding: clamp(20px, 3vw, 28px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 200ms var(--ease-out), box-shadow 200ms var(--ease-out);
+}
+.feat:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+.feat.hero-feat {
+  grid-column: span 6;
+  min-height: 320px;
+  background: linear-gradient(140deg, var(--ap-green) 0%, var(--ap-green-deep) 100%);
+  color: #fff;
+}
+.feat.big { grid-column: span 6; }
+.feat.med { grid-column: span 4; }
+.feat.sm  { grid-column: span 3; }
+
+.feat-icon {
+  width: 42px; height: 42px;
+  border-radius: 11px;
+  background: var(--ap-green-muted);
+  display: grid; place-items: center;
+  color: var(--ap-green);
+  font-size: 22px;
+}
+.feat.hero-feat .feat-icon {
+  color: var(--ap-amber-light);
+  background: rgba(255,255,255,0.1);
+}
+
+.feat h3 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(17px, 1.8vw, 22px);
+  line-height: 1.2;
+  color: var(--ap-ink);
+}
+.feat.hero-feat h3 { color: #fff; font-size: clamp(20px, 2.4vw, 30px); }
+
+.feat p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ap-ink-mid);
+}
+.feat.hero-feat p { color: rgba(255,255,255,0.78); font-size: 15px; }
+
+.feat-mock {
+  margin-top: auto;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 12px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.6;
+}
+.feat-mock .you { color: var(--ap-amber-light); }
+.feat-mock .bot { color: #fff; }
+
+/* Responsive breakdowns */
+@media (max-width: 980px) {
+  .feat-grid { grid-template-columns: repeat(2, 1fr); }
+  .feat, .feat.hero-feat, .feat.big, .feat.med, .feat.sm { grid-column: span 1; }
+  .feat.hero-feat { grid-column: span 2; }
+}
+@media (max-width: 560px) {
+  .feat-grid { grid-template-columns: 1fr; gap: 12px; }
+  .feat, .feat.hero-feat, .feat.big, .feat.med, .feat.sm { grid-column: span 1; }
+}

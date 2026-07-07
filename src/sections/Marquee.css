@@ -1,0 +1,42 @@
+.marquee {
+  border-block: 1px solid var(--ap-card-border);
+  background: var(--ap-surface-alt);
+  padding: 16px 0;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-track {
+  display: flex;
+  gap: 48px;
+  animation: marquee 40s linear infinite;
+  white-space: nowrap;
+  width: max-content;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--ap-ink-mid);
+}
+.marquee-item b {
+  font-family: var(--font-display);
+  font-weight: 900;
+  color: var(--ap-ink);
+  font-variant-numeric: tabular-nums;
+}
+.m-tag {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ap-green);
+  background: var(--ap-green-muted);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+.m-check { color: var(--ap-green); font-weight: 700; }

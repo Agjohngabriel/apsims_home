@@ -1,0 +1,79 @@
+:root {
+  /* ============ COLORS ============ */
+  --ap-green:           #1A5C3A;
+  --ap-green-light:     #2D7A52;
+  --ap-green-muted:     #E8F3ED;
+  --ap-green-border:    #B8D9C6;
+  --ap-green-deep:      #0E3D26;
+
+  --ap-amber:           #C47B1A;
+  --ap-amber-light:     #F5A623;
+  --ap-amber-muted:     #FDF3E3;
+  --ap-amber-border:    #F5CFA0;
+  --ap-amber-deep:      #854F0B;
+
+  --ap-terra:           #A8431E;
+  --ap-terra-light:     #D4683B;
+  --ap-terra-muted:     #FAF0EB;
+  --ap-terra-border:    #F0C4B5;
+  --ap-terra-deep:      #6B2A12;
+
+  --ap-ink:             #1C1F1A;
+  --ap-ink-mid:         #4A4F47;
+  --ap-ink-light:       #7A8177;
+  --ap-ink-faint:       #E0DFD9;
+
+  --ap-surface:         #F7F6F2;
+  --ap-surface-alt:     #F1F0EC;
+  --ap-white:           #FFFFFF;
+  --ap-card-border:     rgba(26,92,58,0.12);
+
+  --ap-tg-blue:         #2AABEE;
+  --ap-wa-bg:           #E8DDD4;
+  --ap-wa-out:          #D9FDD3;
+  --ap-wa-send:         #25D366;
+
+  --color-bg:           var(--ap-surface);
+  --color-fg:           var(--ap-ink);
+  --color-success:      var(--ap-green);
+  --color-warning:      var(--ap-amber);
+  --color-danger:       var(--ap-terra);
+  --color-card:         var(--ap-white);
+  --color-border:       var(--ap-card-border);
+
+  /* ============ TYPOGRAPHY ============ */
+  --font-display:       'Archivo Black', 'Archivo', system-ui, sans-serif;
+  --font-body:          'Archivo', system-ui, -apple-system, sans-serif;
+  --font-mono:          ui-monospace, Menlo, monospace;
+
+  /* ============ SPACING ============ */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 40px;
+  --sp-8: 48px;
+  --sp-9: 64px;
+
+  /* ============ RADII ============ */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* ============ SHADOWS ============ */
+  --shadow-xs: 0 1px 2px rgba(26,92,58,0.04);
+  --shadow-sm: 0 1px 3px rgba(26,92,58,0.06), 0 1px 2px rgba(26,92,58,0.04);
+  --shadow-md: 0 4px 12px rgba(26,92,58,0.08), 0 2px 4px rgba(26,92,58,0.04);
+  --shadow-lg: 0 12px 32px rgba(26,92,58,0.10), 0 4px 8px rgba(26,92,58,0.05);
+
+  /* ============ MOTION ============ */
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:  cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:     120ms;
+  --dur-base:     180ms;
+  --dur-slow:     280ms;
+}

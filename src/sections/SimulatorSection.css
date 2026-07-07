@@ -1,0 +1,22 @@
+.sim-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: clamp(32px, 6vw, 72px);
+  align-items: center;
+}
+.sim-copy {
+  max-width: 480px;
+}
+@media (max-width: 860px) {
+  .sim-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .sim-copy {
+    max-width: 100%;
+  }
+  .sim-copy .section-label {
+    justify-content: center;
+  }
+}

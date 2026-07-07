@@ -1,0 +1,49 @@
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item { border-bottom: 1px solid var(--ap-card-border); }
+.faq-q {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(16px, 3vw, 24px) 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(16px, 1.7vw, 19px);
+  letter-spacing: -0.01em;
+  color: var(--ap-ink);
+  text-align: left;
+  gap: 20px;
+  transition: color 150ms;
+}
+.faq-q:hover { color: var(--ap-green); }
+.faq-ic {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--ap-green-muted);
+  color: var(--ap-green);
+  display: grid; place-items: center;
+  flex-shrink: 0;
+  transition: transform 200ms var(--ease-out);
+}
+.faq-item.open .faq-q .faq-ic {
+  transform: rotate(45deg);
+  background: var(--ap-amber-muted);
+  color: var(--ap-amber);
+}
+.faq-a {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ap-ink-mid);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 280ms var(--ease-out), padding 280ms var(--ease-out);
+  padding: 0 48px 0 0;
+}
+.faq-item.open .faq-a { max-height: 400px; padding: 0 48px 22px 0; }
+
+@media (max-width: 480px) {
+  .faq-a, .faq-item.open .faq-a { padding-right: 0; }
+}

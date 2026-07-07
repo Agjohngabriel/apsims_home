@@ -1,0 +1,55 @@
+.final-cta {
+  background: var(--ap-green);
+  color: #fff;
+  border-radius: var(--radius-xl);
+  padding: clamp(48px, 8vw, 80px) clamp(24px, 6vw, 64px);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before, .final-cta::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.final-cta::before {
+  width: 400px; height: 400px;
+  background: rgba(255,255,255,0.04);
+  top: -120px; right: -120px;
+}
+.final-cta::after {
+  width: 280px; height: 280px;
+  background: rgba(196,123,26,0.1);
+  bottom: -100px; left: -80px;
+}
+.final-cta h2 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(36px, 5.5vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  color: #fff;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+}
+.final-cta h2 em {
+  color: var(--ap-amber-light);
+  font-style: italic;
+  font-weight: 500;
+  font-family: var(--font-body);
+}
+.final-cta p {
+  font-size: clamp(15px, 1.5vw, 18px);
+  color: rgba(255,255,255,0.78);
+  max-width: 520px;
+  margin: 0 auto 28px;
+  position: relative;
+  z-index: 1;
+}
+.final-cta .waitlist {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
