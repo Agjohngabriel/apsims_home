@@ -1,9 +1,11 @@
 import HeroChatScene from '../components/HeroChatScene';
 import { HEADLINES } from '../data/content';
+import { trackWaitlistJoin } from '../analytics';
 import './Hero.css';
 
 function onWaitlist(e) {
   e.preventDefault();
+  trackWaitlistJoin('hero');
   alert("You're on the waitlist — we'll WhatsApp you when it's your turn.");
 }
 

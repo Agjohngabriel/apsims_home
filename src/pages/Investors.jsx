@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { trackInvestorCTA } from '../analytics';
+import SEO from '../components/SEO';
 import './Investors.css';
 import apsimsLogo from '../assets/apsims-logo.svg';
 
@@ -18,7 +20,7 @@ const REASONS = [
   {
     icon: 'ti-coin-naira',
     title: 'Capital-efficient model',
-    body: 'The product runs on AI-parsed messages and a lightweight backend. No physical logistics, no hardware. Customer acquisition happens via word of mouth inside the same WhatsApp groups traders already use.',
+    body: 'The product runs on parsed messages and a lightweight backend. No physical logistics, no hardware. Customer acquisition happens via word of mouth inside the same WhatsApp groups traders already use.',
   },
   {
     icon: 'ti-chart-line',
@@ -28,19 +30,24 @@ const REASONS = [
   {
     icon: 'ti-world',
     title: 'Scalable to West Africa',
-    body: 'The same model applies across Ghana, Kenya, and francophone West Africa where WhatsApp and Telegram penetration is similarly high. The AI layer handles multilingual input with minimal retraining.',
+    body: 'The same model applies across Ghana, Kenya, and francophone West Africa where WhatsApp and Telegram penetration is similarly high. The platform handles multilingual input with minimal retraining.',
   },
 ];
 
 export default function Investors() {
   return (
     <div className="inv-page">
+      <SEO
+        title="For Investors & Partners"
+        description="APSIMS is capturing Nigeria's $200B informal retail market with inventory management inside WhatsApp. First-mover, capital-efficient, pre-seed round open."
+        path="/investors"
+      />
       <nav className="inv-nav">
         <div className="inv-nav-inner">
           <Link to="/" className="brand">
             <img src={apsimsLogo} alt="APSIMS" className="brand-logo" />
           </Link>
-          <a href="mailto:founders@nacoderiel.com" className="inv-nav-cta">
+          <a href="mailto:founders@nacoderiel.com" className="inv-nav-cta" onClick={() => trackInvestorCTA('nav_talk_to_us')}>
             Talk to us <i className="ti ti-arrow-right" />
           </a>
         </div>
@@ -58,7 +65,7 @@ export default function Investors() {
             The product that lives there wins.
           </p>
           <div className="inv-cta-row">
-            <a href="mailto:founders@nacoderiel.com" className="inv-btn-primary">
+            <a href="mailto:founders@nacoderiel.com" className="inv-btn-primary" onClick={() => trackInvestorCTA('hero_talk_to_founders')}>
               <i className="ti ti-mail" /> Talk to the founders
             </a>
           </div>
@@ -104,7 +111,7 @@ export default function Investors() {
               or an operator with distribution in Nigerian or West African markets, we'd like to talk.
             </p>
             <div className="inv-contact-actions">
-              <a href="mailto:founders@nacoderiel.com" className="inv-btn-primary">
+              <a href="mailto:founders@nacoderiel.com" className="inv-btn-primary" onClick={() => trackInvestorCTA('bottom_email')}>
                 <i className="ti ti-mail" /> founders@nacoderiel.com
               </a>
             </div>

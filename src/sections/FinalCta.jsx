@@ -1,3 +1,4 @@
+import { trackWaitlistJoin } from '../analytics';
 import './FinalCta.css';
 
 export default function FinalCta() {
@@ -12,7 +13,7 @@ export default function FinalCta() {
           </p>
           <form
             className="waitlist"
-            onSubmit={e => { e.preventDefault(); alert('On the list — talk soon.'); }}
+            onSubmit={e => { e.preventDefault(); trackWaitlistJoin('final_cta'); alert('On the list — talk soon.'); }}
           >
             <input type="tel" placeholder="+234 800 000 0000" required />
             <button type="submit">

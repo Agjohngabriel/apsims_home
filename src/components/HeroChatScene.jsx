@@ -105,7 +105,7 @@ export default function HeroChatScene() {
           <div className="mp-avatar">A</div>
           <div className="mp-who">
             <div className="mp-name">APSIMS Bot</div>
-            <div className="mp-stat">online · AI inventory assistant</div>
+            <div className="mp-stat">online · inventory assistant</div>
           </div>
           <i className="ti ti-video" />
           <i className="ti ti-dots-vertical" />

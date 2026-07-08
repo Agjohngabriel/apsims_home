@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTweaks } from './hooks/useTweaks';
+import SEO from './components/SEO';
 
 import Nav from './components/Nav';
 import Hero from './sections/Hero';
@@ -40,6 +41,10 @@ export default function App() {
 
   return (
     <>
+      <SEO
+        path="/"
+        description="APSIMS is inventory management that lives inside WhatsApp and Telegram. Log sales, track stock, get PDF reports — no app, no training. Built for Nigerian SMEs."
+      />
       <Nav scrolled={scrolled} />
       <Hero tweaks={tweaks} />
       <Marquee />

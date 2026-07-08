@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0F3D26"/>
+
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.05"/>
+
+  <!-- Green glow blob -->
+  <ellipse cx="920" cy="220" rx="420" ry="320" fill="#1A5C3A" opacity="0.6"/>
+
+  <!-- Logo mark -->
+  <g transform="translate(120, 160)">
+    <rect x="0" y="40" width="48" height="84" rx="10" fill="#ffffff" opacity="0.9"/>
+    <rect x="66" y="0" width="48" height="124" rx="10" fill="#ffffff"/>
+    <circle cx="138" cy="24" r="28" fill="#F5A623"/>
+    <path d="M126 24l9 9 16-17" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- APSIMS wordmark -->
+  <text x="120" y="380" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="96" fill="#ffffff" letter-spacing="-2">APSIMS</text>
+
+  <!-- Tagline -->
+  <text x="120" y="444" font-family="Arial, sans-serif" font-size="36" fill="#7EC8A0">Your shop's brain. Inside WhatsApp.</text>
+
+  <!-- Divider -->
+  <rect x="120" y="472" width="80" height="4" rx="2" fill="#F5A623"/>
+
+  <!-- Sub-copy -->
+  <text x="120" y="526" font-family="Arial, sans-serif" font-size="26" fill="#ffffff" opacity="0.7">Inventory · Sales · Reports · Credit — in chat</text>
+
+  <!-- WhatsApp badge -->
+  <rect x="120" y="552" width="210" height="46" rx="23" fill="#25D366" opacity="0.15"/>
+  <text x="225" y="581" font-family="Arial, sans-serif" font-size="22" fill="#25D366" text-anchor="middle">WhatsApp</text>
+
+  <!-- Telegram badge -->
+  <rect x="346" y="552" width="210" height="46" rx="23" fill="#229ED9" opacity="0.15"/>
+  <text x="451" y="581" font-family="Arial, sans-serif" font-size="22" fill="#229ED9" text-anchor="middle">Telegram</text>
+
+  <!-- Domain -->
+  <text x="1080" y="608" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" opacity="0.35" text-anchor="end">apsims.nacoderiel.com</text>
+</svg>

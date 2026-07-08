@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { trackContactSubmit, trackOutboundClick } from '../analytics';
+import SEO from '../components/SEO';
 import './Contact.css';
 import apsimsLogo from '../assets/apsims-logo.svg';
 
@@ -21,11 +23,17 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    trackContactSubmit(form.topic);
     setSent(true);
   }
 
   return (
     <div className="ct-page">
+      <SEO
+        title="Contact Us"
+        description="Get in touch with the APSIMS team. Questions about pricing, your account, partnerships, or press — we reply within one business day."
+        path="/contact"
+      />
       <nav className="ct-nav">
         <div className="ct-nav-inner">
           <Link to="/" className="brand">
@@ -45,21 +53,21 @@ export default function Contact() {
           </p>
 
           <div className="ct-channels">
-            <a href="https://wa.me/2348000000000" className="ct-channel">
+            <a href="https://wa.me/2348000000000" className="ct-channel" onClick={() => trackOutboundClick('whatsapp', 'contact_page')}>
               <span className="ct-ch-icon wa"><i className="ti ti-brand-whatsapp" /></span>
               <div>
                 <div className="ct-ch-title">WhatsApp</div>
                 <div className="ct-ch-sub">Fastest response · usually &lt; 1 hr</div>
               </div>
             </a>
-            <a href="https://t.me/apsims_support" className="ct-channel">
+            <a href="https://t.me/apsims_support" className="ct-channel" onClick={() => trackOutboundClick('telegram', 'contact_page')}>
               <span className="ct-ch-icon tg"><i className="ti ti-brand-telegram" /></span>
               <div>
                 <div className="ct-ch-title">Telegram</div>
                 <div className="ct-ch-sub">@apsims_support</div>
               </div>
             </a>
-            <a href="mailto:apsims@nacoderiel.com" className="ct-channel">
+            <a href="mailto:apsims@nacoderiel.com" className="ct-channel" onClick={() => trackOutboundClick('email', 'contact_page')}>
               <span className="ct-ch-icon em"><i className="ti ti-mail" /></span>
               <div>
                 <div className="ct-ch-title">Email</div>

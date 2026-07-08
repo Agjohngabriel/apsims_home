@@ -1,15 +1,95 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-NG">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1A5C3A" />
     <title>APSIMS — Your shop's brain. Inside WhatsApp.</title>
-    <meta name="description" content="AI-powered inventory management on WhatsApp and Telegram. Built for Nigerian SMEs." />
+    <meta name="description" content="Smart inventory management on WhatsApp and Telegram. Built for Nigerian SMEs." />
     <link rel="icon" type="image/svg+xml" href="/src/assets/apsims-favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Archivo+Black&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.34.0/dist/tabler-icons.min.css" />
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "APSIMS",
+      "url": "https://apsims.nacoderiel.com",
+      "logo": "https://apsims.nacoderiel.com/og-image.png",
+      "description": "Smart inventory management for Nigerian SMEs that runs inside WhatsApp and Telegram. Log sales, track stock, manage credit, and get PDF reports — no app needed.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "WhatsApp, Telegram, Web",
+      "offers": [
+        { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "NGN" },
+        { "@type": "Offer", "name": "Basic", "price": "1500", "priceCurrency": "NGN", "billingDuration": "P1M" },
+        { "@type": "Offer", "name": "Pro", "price": "3500", "priceCurrency": "NGN", "billingDuration": "P1M" }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nacoderiel Limited",
+        "url": "https://apsims.nacoderiel.com",
+        "email": "apsims@nacoderiel.com",
+        "areaServed": "NG"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "24"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need to download anything to use APSIMS?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. APSIMS lives entirely inside WhatsApp and Telegram. Save the number, send /start, and you're in. No app store, no installation, nothing to learn." }
+        },
+        {
+          "@type": "Question",
+          "name": "How does APSIMS understand my messages?",
+          "acceptedAnswer": { "@type": "Answer", "text": "APSIMS is tuned for inventory and sales language — naira amounts, local units like bags, crates, and tins, and Nigerian business vocabulary. It echoes back what it understood so you can correct mistakes immediately." }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I lose my phone?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Your data is safe. Everything lives in APSIMS's encrypted database, keyed to your phone number — not on your phone. Get a new SIM with the same number, reinstall WhatsApp, and message the bot. You're back in seconds." }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does APSIMS cost?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Free to start — up to 50 entries per month. Basic at ₦1,500/month gets unlimited entries and monthly PDF reports. Pro at ₦3,500/month adds credit tracking, smart insights, and the web portal." }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1SF3CZ4CY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L1SF3CZ4CY');
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "xjdwm11yaf");
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -12,7 +12,7 @@ export default function Footer() {
               <img src={apsimsLogo} alt="APSIMS" className="brand-logo" />
             </div>
             <p className="footer-blurb">
-              AI-powered inventory management on WhatsApp and Telegram.
+              Inventory management on WhatsApp and Telegram.
               Built for the way Nigerian traders actually work.
             </p>
           </div>

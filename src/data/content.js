@@ -7,7 +7,7 @@ export const HEADLINES = {
   shop: {
     h1: "Your shop's brain. Inside WhatsApp.",
     h1Accent: 'brain.',
-    lede: 'Nigerian traders log ₦200B a year on paper. APSIMS does it in chat — sales, stock, credit, AI reports — exactly where business already happens.',
+    lede: 'Nigerian traders log ₦200B a year on paper. APSIMS does it in chat — sales, stock, credit, reports — exactly where business already happens.',
   },
   sell: {
     h1: 'Sell it. Type it. Sorted.',
@@ -47,7 +47,7 @@ export const STEPS = [
     ],
   },
   {
-    tag: 'Step 03 · AI reports',
+    tag: 'Step 03 · Reports',
     title: 'Ask for a report. Get a PDF.',
     body: 'Type "report for March" or "what\'s my profit this week?" — APSIMS replies in plain English, then sends a full PDF you can forward to your accountant, bank, or microfinance officer.',
     chat: [
@@ -67,7 +67,7 @@ export const FEATURES = [
   },
   { cls: 'med', icon: 'ti-brain',           title: 'Natural language entry',    body: '"Sold 5 cartons Indomie for ₦9,500" — the bot parses qty, item, price, and updates inventory.' },
   { cls: 'med', icon: 'ti-package',         title: 'Live stock + alerts',       body: 'Auto-updated on every sale. Proactive low-stock pings before you run out. Restock with one message.' },
-  { cls: 'med', icon: 'ti-chart-bar',       title: 'AI weekly reports',         body: '"Profit this week?" returns plain English summary + a PDF you can forward to your accountant or bank.' },
+  { cls: 'med', icon: 'ti-chart-bar',       title: 'Weekly reports',            body: '"Profit this week?" returns plain English summary + a PDF you can forward to your accountant or bank.' },
   { cls: 'med', icon: 'ti-users',           title: 'Credit & owe-book',         body: '"Mrs Ade took ₦12k on credit." Track customer debt, overdue accounts, and collect payments in chat.' },
   { cls: 'med', icon: 'ti-coin-naira',      title: 'Naira-native',              body: 'Built for ₦, not converted. Local units (bags, crates, tins), Nigerian business language, kobo precision.' },
   { cls: 'med', icon: 'ti-shield-lock',     title: 'Five-layer security',       body: 'PIN protection + DB encryption + web portal + recovery contact. Lose your phone, keep your data.' },
@@ -76,8 +76,8 @@ export const FEATURES = [
 export const COMPARE_ROWS = [
   ['WhatsApp-native interface',   'no', 'partial', 'no', 'no', 'yes-us'],
   ['Telegram channel',            'no', 'no', 'no', 'no', 'yes-us'],
-  ['AI conversational input',     'no', 'no', 'partial', 'no', 'yes-us'],
-  ['AI-generated reports',        'no', 'no', 'yes', 'partial', 'yes-us'],
+  ['Conversational input',        'no', 'no', 'partial', 'no', 'yes-us'],
+  ['Auto-generated reports',      'no', 'no', 'yes', 'partial', 'yes-us'],
   ['Naira-native',                'yes', 'yes', 'yes', 'yes', 'yes-us'],
   ['Built for informal traders',  'yes', 'yes', 'no', 'yes', 'yes-us'],
   ['Zero-install, zero-training', 'no', 'no', 'no', 'no', 'yes-us'],
@@ -103,7 +103,7 @@ export const CHANNELS = [
   {
     icon: 'ti-brand-telegram',
     title: 'Telegram',
-    body: 'Prefer Telegram? Full feature parity — same AI, same data engine, same PDF reports. Richer interactive menus and no limits on proactive messages from us to you.',
+    body: 'Prefer Telegram? Full feature parity — same engine, same data, same PDF reports. Richer interactive menus and no limits on proactive messages from us to you.',
     tag: 'Available now',
     color: 'blue',
   },
@@ -130,10 +130,10 @@ export const TESTI_SMALL = [
 
 export const FAQS = [
   { q: 'Do I need to download anything?',            a: 'No. APSIMS lives entirely inside WhatsApp (and Telegram). Save the number, send /start, and you\'re in. No app store, no installation, nothing to learn.' },
-  { q: 'How does APSIMS understand my messages?',    a: 'We use task-specific AI tuned for inventory and sales language — naira amounts, local units (bags, crates, tins), Nigerian business vocabulary. It echoes back what it understood so you can correct mistakes immediately.' },
+  { q: 'How does APSIMS understand my messages?',    a: 'APSIMS is built to understand inventory and sales language — naira amounts, local units (bags, crates, tins), Nigerian business vocabulary. It echoes back what it understood so you can correct mistakes immediately.' },
   { q: 'What if I lose my phone?',                   a: 'Your data is safe. Everything lives in APSIMS\'s encrypted database, keyed to your phone number — not on your phone. Get a new SIM with the same number, reinstall WhatsApp, and message the bot. You\'re back in seconds.' },
-  { q: 'Is this allowed under WhatsApp\'s rules?',   a: 'Yes. Meta\'s January 2026 policy bans general-purpose AI chatbots, but task-specific business tools — like inventory management — are explicitly compliant. APSIMS routes through an approved WhatsApp Business Solution Provider.' },
-  { q: 'How much does it cost?',                     a: 'Free to start — up to 50 entries per month. Basic at ₦1,500/month gets unlimited entries and monthly PDF reports. Pro at ₦3,500/month adds credit tracking, AI insights, and the web portal. See full pricing →' },
+  { q: 'Is this allowed under WhatsApp\'s rules?',   a: 'Yes. Meta\'s January 2026 policy bans general-purpose chatbots, but task-specific business tools — like inventory management — are explicitly compliant. APSIMS routes through an approved WhatsApp Business Solution Provider.' },
+  { q: 'How much does it cost?',                     a: 'Free to start — up to 50 entries per month. Basic at ₦1,500/month gets unlimited entries and monthly PDF reports. Pro at ₦3,500/month adds credit tracking, smart insights, and the web portal. See full pricing →' },
   { q: 'Can I switch between WhatsApp and Telegram?', a: 'Each APSIMS account lives on one channel — your data is tied to the account you opened, not to both at once. If you need to move to a different channel, contact us and we\'ll migrate your data. Most traders pick one and stick with it.' },
 ];
 

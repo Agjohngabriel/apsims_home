@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import './ComingSoon.css';
 import apsimsLogo from '../assets/apsims-logo.svg';
 
 export default function ComingSoon() {
   return (
     <div className="cs-page">
+      <SEO
+        title="Mobile & Desktop Apps — Coming Soon"
+        description="APSIMS native apps for iOS, Android, and desktop are in development. In the meantime, get started right now inside WhatsApp or Telegram — no download needed."
+        path="/apps"
+        noIndex={true}
+      />
       <nav className="cs-nav">
         <Link to="/" className="brand">
           <img src={apsimsLogo} alt="APSIMS" className="brand-logo" />

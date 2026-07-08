@@ -14,7 +14,7 @@ export default function RoadmapSection() {
           </div>
           <p className="section-sub">
             Pick the channel that fits your workflow. WhatsApp, Telegram, web portal, and mobile
-            — all live today, all running the same AI engine and the same data behind the scenes.
+            — all live today, all running the same engine and the same data behind the scenes.
           </p>
         </div>
 
